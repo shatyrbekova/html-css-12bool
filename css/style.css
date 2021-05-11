@@ -1,21 +1,44 @@
 .row {
     height:100%;
-   
+    
 }
 
  [class^="col"] {
     background: pink;
     border: 1px black solid;
-    height: 150px;
+    height: 220px;
     text-align: center;
-    line-height: 75px;
-    padding: 20px;
-   
+    padding: 15px;
+    position: relative;
  }
 
+ [class^="text-"] {
+    position: absolute;
+    bottom: 50%;
+ }
+.text-0{
+     
+     left:30%;
+}
+
+.text1 {
+    position: absolute;
+    transform: translate(70px, 70px) ;
+}
+
+.text-2{
+    left:50%;
+} 
+
+.text-3{
+    bottom:40%;
+    padding-right: 13px;
+}
 [class*="col"] > .row  > [class*="col"]
 {
+   
     height: 100%;
     background-color: salmon;
+    border: 1px white solid;
 
 }
